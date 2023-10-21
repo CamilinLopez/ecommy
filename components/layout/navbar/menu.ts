@@ -8,17 +8,17 @@ export const menu: Menu[] = [
   {
     id: 1,
     title: "All",
-    path: "/all",
+    path: "/search",
   },
   {
     id: 2,
     title: "Shirts",
-    path: "shirt",
+    path: "/shirt",
   },
   {
     id: 3,
     title: "Stikers",
-    path: "stiker",
+    path: "/stiker",
   },
 ];
 

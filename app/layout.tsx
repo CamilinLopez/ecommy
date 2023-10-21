@@ -4,17 +4,21 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/layout/navbar";
 import { Suspense } from "react";
 
+const baseUrl = "http://localhost:3000";
+
+export const metadata: Metadata = {
+  metadataBase:new URL(baseUrl),
+  title: "Ecommy",
+  description:
+    "Aumenta tus ventas através de tú propia página web sin comisiones",
+};
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: "Ecommy",
-  description:
-    "Aumenta tus ventas através de tú propia página web sin comisiones",
-};
 
 export default function RootLayout({
   children,
