@@ -22,7 +22,7 @@ export default function Navbar() {
           >
             <LogoSquare />
             <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
-              ECOMMY
+              Tania Fea
             </div>
           </Link>
           <ul className="hidden gap-6 text-sm md:flex md:items-center">

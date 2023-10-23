@@ -1,4 +1,4 @@
-import type { Product, Menu } from "@/components/lib/shopify/types";
+import type { Product, Menu, Page } from "@/components/lib/shopify/types";
 
 export const productos: Product[] = [
   {
@@ -55,6 +55,7 @@ export const productos: Product[] = [
       altText: "img1",
       width: 35,
       height: 35,
+      priority: true,
     },
     images: [
       {
@@ -62,12 +63,14 @@ export const productos: Product[] = [
         altText: "image2",
         width: 60,
         height: 60,
+        priority: true,
       },
       {
         url: "/shirt2.webp",
         altText: "image3",
         width: 60,
         height: 60,
+        priority: true,
       },
     ],
     seo: {
@@ -390,22 +393,38 @@ export const GetMenu: Menu[] = [
   },
   {
     title: "About",
-    path: "/",
+    path: "/about",
   },
   {
     title: "Terms & Conditions",
-    path: "/",
+    path: "/terms-conditions",
   },
   {
     title: "Shipping & Return Policy",
-    path: "/",
+    path: "/shipping-return-policy",
   },
   {
     title: "Privacy Policy",
-    path: "/",
+    path: "/privacy-policy",
   },
   {
     title: "FAQ",
-    path: "/",
+    path: "/frequently-asked-questions",
+  },
+];
+
+export const pages: Page[] = [
+  {
+    id: "1",
+    title: "About",
+    handle: "about",
+    body: "<p>este es about</p>",
+    bodySummary: "Este es el bodySumary",
+    seo: {
+      title: "About",
+      description: "Seo description",
+    },
+    createdAt: "2023-10-23T13:03:32.000Z",
+    updatedAt: "2023-10-23T13:03:32.000Z",
   },
 ];

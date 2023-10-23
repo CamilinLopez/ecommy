@@ -13,12 +13,12 @@ export const menu: Menu[] = [
   {
     id: 2,
     title: "Shirts",
-    path: "/shirt",
+    path: "/search/shirt",
   },
   {
     id: 3,
     title: "Stikers",
-    path: "/stiker",
+    path: "/search/stiker",
   },
 ];
 

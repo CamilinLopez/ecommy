@@ -7,8 +7,15 @@ import { Suspense } from "react";
 const baseUrl = "http://localhost:3000";
 
 export const metadata: Metadata = {
-  metadataBase:new URL(baseUrl),
-  title: "Ecommy",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Ecommy",
+    template: `%s | Ecommy`,
+  },
+  robots: {
+    follow: true,
+    index: true,
+  },
   description:
     "Aumenta tus ventas através de tú propia página web sin comisiones",
 };
@@ -18,7 +25,6 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
 });
-
 
 export default function RootLayout({
   children,
